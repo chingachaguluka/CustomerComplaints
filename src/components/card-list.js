@@ -7,7 +7,7 @@ class CardList extends Component {
     render() {
 
         return (
-            <div>
+            <div className="row">
                 Card Listing works!!
             </div>
         );
