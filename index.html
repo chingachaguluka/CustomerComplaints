@@ -1,12 +1,294 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/style/style.css">
+
     <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
     <script src="https://maps.googleapis.com/maps/api/js"></script>
   </head>
-  <body>
-    <div class="container"></div>
+  <body class="fixed-sn pink-skin">
+      
+      <!-- Start your project here-->
+
+      <!--Double navigation-->
+      <header>
+
+          <!-- Sidebar navigation -->
+          <ul id="slide-out" class="side-nav fixed custom-scrollbar">
+
+              <!-- Logo -->
+              <li>
+                  <div class="logo-wrapper waves-light">
+                      <a href="#"><img src="http://mdbootstrap.com/wp-content/uploads/2015/12/mdb-white2.png" class="img-fluid flex-center"></a>
+                  </div>
+              </li>
+              <!--/. Logo -->
+
+              <!--Social-->
+              <li>
+                  <ul class="social">
+                      <li><a class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a></li>
+                      <li><a class="icons-sm pin-ic"><i class="fa fa-pinterest"> </i></a></li>
+                      <li><a class="icons-sm gplus-ic"><i class="fa fa-google-plus"> </i></a></li>
+                      <li><a class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a></li>
+                  </ul>
+              </li>
+              <!--/Social-->
+
+              <!--Search Form-->
+              <li>
+                  <form class="search-form" role="search">
+                      <div class="form-group waves-light">
+                          <input type="text" class="form-control" placeholder="Search">
+                      </div>
+                  </form>
+              </li>
+              <!--/.Search Form-->
+
+              <!-- Side navigation links -->
+              <li>
+                  <ul class="collapsible collapsible-accordion">
+                      <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-chevron-right"></i> Complaints<i class="fa fa-angle-down rotate-icon"></i></a>
+                          <div class="collapsible-body">
+                              <ul>
+                                  <li><a href="#" class="waves-effect">New Complaint</a>
+                                  </li>
+                                  <li><a href="#" class="waves-effect">Complaints List</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </li>
+                      <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-hand-pointer-o"></i> Reports<i class="fa fa-angle-down rotate-icon"></i></a>
+                          <div class="collapsible-body">
+                              <ul>
+                                  <li><a href="#" class="waves-effect">Initiated</a>
+                                  </li>
+                                  <li><a href="#" class="waves-effect">In Progress</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </li>
+                  </ul>
+              </li>
+              <!--/. Side navigation links -->
+
+          </ul>
+          <!--/. Sidebar navigation -->
+
+          <!--Navbar-->
+          <nav class="navbar navbar-fixed-top scrolling-navbar double-nav">
+
+              <!-- SideNav slide-out button -->
+              <div class="pull-left">
+                  <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <!-- Breadcrumb-->
+              <div class="breadcrumb-dn">
+                  <p>Breadcrumb or page title</p>
+              </div>
+
+              <ul class="nav navbar-nav pull-right">
+                  <li class="nav-item ">
+                      <a class="nav-link"><i class="fa fa-user"></i> <span class="hidden-sm-down">Logout</span></a>
+                  </li>
+              </ul>
+
+          </nav>
+          <!--/.Navbar-->
+
+      </header>
+      <!--/Double navigation-->
+
+      <!--Main layout-->
+      <main>
+          <!--Main layout-->
+
+              <!--First row-->
+              <div class="row">
+                  <!--First columnn-->
+                  <div class="col-md-4">
+                      <!--Rotating card-->
+                      <div class="card-wrapper">
+                          <div id="card-1" class="card-rotating effect__click">
+
+                              <!--Front Side-->
+                              <div class="face front">
+                                  <h3 class="card-header primary-color white-text">Chinga Chaguluka</h3>
+                                  <!--Content-->
+                                  <hr>
+                                      <p class="card-text">
+                                          Description: <strong>The ATM was not working for more than 2 hours and none was able to explain</strong>    
+                                      </p>
+                                  <hr>
+                                  <!--Triggering button for rotation-->
+                                  <a class="rotate-btn" data-card="card-1">
+                                      <i class="fa fa-repeat"></i> Contact Details
+                                  </a>
+                                  <br> 
+                              </div>  <!--/.Front Side-->
+
+                              <!--Back Side-->
+                              <div class="face back">
+
+                                  <!--Content-->
+                                  <div class="card-block">
+                                      <div class="card-title">
+                                          Phone: <strong>0999989777</strong><br>
+                                          Email: <strong>chinga.e.chaguluka@gmail.com</strong><br>
+                                          Logged: <strong>26-Oct-16 15:54</strong><br>
+                                          Status: <strong>Logged</strong>
+                                      </div>
+
+                                      <a class="btn btn-primary">Next Step</a>
+                                  </div>
+
+                                  <!--Triggering button-->
+                                  <a class="rotate-btn" data-card="card-1"><i class="fa fa-undo"></i> Back </a>
+
+                              </div>  <!--/.Back Side-->
+
+                          </div>
+                      </div>  <!--/.Rotating card-->   
+                  </div>  <!--First columnn-->
+
+
+
+                  <!--Second columnn-->
+                  <div class="col-md-4">
+                      <!--Rotating card-->
+                      <div class="card-wrapper">
+                          <div id="card-2" class="card-rotating effect__click">
+
+                              <!--Front Side-->
+                              <div class="face front">
+                                  <h3 class="card-header primary-color white-text">Stella Mapemba</h3>
+                                  <!--Content-->
+                                  <hr>
+                                  <p class="card-text">
+                                      Description: <strong>Banki M'manja was not working and the CIO did not pick up his phone. He told me that he was on honey moon and was not available for duties</strong>    
+                                  </p>
+                                  <hr>
+                                  <p class="card-text">
+                                      Branch: <strong>Kasungu</strong>    
+                                  </p>  
+                                  <hr>
+                                  <p>
+                                      Age in stage: <strong>1 day</strong> <br>
+                                      Total Age: <strong>3 days</strong> <br>
+                                  </p>
+                                  <!--Triggering button for rotation-->
+                                  <a class="rotate-btn" data-card="card-2">
+                                      <i class="fa fa-repeat"></i> Contact Details
+                                  </a>
+                                  <br> 
+                              </div>  <!--/.Front Side-->
+
+                              <!--Back Side-->
+                              <div class="face back">
+
+                                  <!--Content-->
+                                  <div class="card-block">
+                                      <div class="card-title">
+                                          Phone: <strong>0999100000 </strong><br>
+                                          Email: <strong>stella.mapemba@oibm.mw</strong><br>
+                                          Logged: <strong>30-Oct-16 10:04</strong><br>
+                                          Status: <strong>Pending closure </strong>
+                                      </div>
+
+                                      <a class="btn btn-primary">Next Step</a>
+                                      <a class="btn btn-primary">Resolution information</a>
+                                  </div>
+
+                                  <!--Triggering button-->
+                                  <a class="rotate-btn" data-card="card-2"><i class="fa fa-undo"></i> Back </a>
+
+                              </div>  <!--/.Back Side-->
+
+                          </div>
+                      </div>  <!--/.Rotating card-->   
+                  </div>  <!--Second columnn-->
+
+                  <!--Third columnn-->
+                  <div class="col-md-4">
+                      <!--Panel-->
+                      <div class="card">
+                          <h3 class="card-header primary-color white-text">Jonathan Cato</h3>
+                          <div class="card-block">
+                              <h4 class="card-title">Special title treatment</h4>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                              <a class="btn btn-primary">Go somewhere</a>
+                          </div>
+                      </div>  <!--/.Panel--> 
+
+                  </div> <!--Third columnn-->
+
+              </div>   <!--/.First row-->
+          
+          </div>
+          <!--/.Main layout-->
+
+              
+      </main>
+      <!--/Main layout-->
+
+      <!-- /Start your project here-->
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <div class="container"></div>
+
+      <!-- SCRIPTS -->
+
+      <!-- JQuery -->
+      <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+      <!-- Bootstrap tooltips -->
+      <script type="text/javascript" src="js/tether.min.js"></script>
+
+      <!-- Bootstrap core JavaScript -->
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+      <!-- MDB core JavaScript -->
+      <script type="text/javascript" src="js/mdb.min.js"></script>
+
+      <script>
+          // SideNav init
+          $(".button-collapse").sideNav();
+
+          // Custom scrollbar init
+          var el = document.querySelector('.custom-scrollbar');
+          Ps.initialize(el);
+      </script>
   </body>
   <script src="/bundle.js"></script>
 </html>
