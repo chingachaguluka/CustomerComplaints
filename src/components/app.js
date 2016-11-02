@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
-import CardList from './card-list';
+import ComplaintList from '../containers/complaint-list';
+import ComplaintDetails from '../containers/complaint-details';
 
 export default class App extends Component {
   render() {
     return (
-      <div>
-        <CardList />
+      <div className="row">
+        <div className="col-md-5">
+          <ComplaintList />
+        </div>
+        <div className="col-md-7">
+          <ComplaintDetails />
+        </div>
       </div>
     );
   }

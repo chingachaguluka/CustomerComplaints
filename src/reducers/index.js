@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
+import { complaints } from './complaints';
 
 const rootReducer = combineReducers({
-  state: (state = {}) => state
+  complaints: complaints
 });
 
 export default rootReducer;
