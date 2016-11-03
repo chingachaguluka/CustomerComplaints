@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import ComplaintDetails from './complaint-details';
-import ComplaintListItem from '../components/complaint-list-item';
+import { bindActionCreators } from 'redux';
+import { selectComplaint } from '../actions/index';
 
 class ComplaintList extends Component {
     
@@ -9,10 +9,11 @@ class ComplaintList extends Component {
 
         return this.props.complaints.map((complaint) => {
             return (
-                <a href="#" class="list-group-item" key={complaint.id}>
-                    <h4 class="list-group-item-heading">{complaint.customerName}  <span className="float-right">#{complaint.id}</span></h4>
-                    <p class="list-group-item-text">Branch: {complaint.branch}</p>
-                </a>
+                <li className="list-group-item" key={complaint.id} 
+                    onClick={() => selectComplaint(complaint)}>
+                    <h4 className="list-group-item-heading">{complaint.customerName}  <span className="float-right">#{complaint.id}</span></h4>
+                    <p className="list-group-item-text">Branch: {complaint.branch}</p>
+                </li>
             );
         });
     }
@@ -34,4 +35,8 @@ function mapStateToProps(state) {
     };
 }
 
-export default connect(mapStateToProps)(ComplaintList);
+function mapDispatchToProps(dispatch) {
+    return bindActionCreators({ selectComplaint: selectComplaint }, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ComplaintList);
