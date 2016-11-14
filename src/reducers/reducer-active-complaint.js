@@ -1,4 +1,4 @@
-export function activeComplaint (state = null, action) {
+export default function (state = null, action) {
 
     switch(action.type) {
         case 'COMPLAINT_SELECTED':

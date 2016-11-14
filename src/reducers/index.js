@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
-import { complaints } from './complaints';
+import Complaints from './reducer-complaints';
+import ActiveComplaint from './reducer-active-complaint';
 
 const rootReducer = combineReducers({
-  complaints: complaints
+  complaints: Complaints,
+  activeComplaint: ActiveComplaint
 });
 
 export default rootReducer;

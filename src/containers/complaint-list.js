@@ -10,7 +10,7 @@ class ComplaintList extends Component {
         return this.props.complaints.map((complaint) => {
             return (
                 <li className="list-group-item" key={complaint.id} 
-                    onClick={() => selectComplaint(complaint)}>
+                    onClick={() => this.props.selectComplaint(complaint)}>
                     <h4 className="list-group-item-heading">{complaint.customerName}  <span className="float-right">#{complaint.id}</span></h4>
                     <p className="list-group-item-text">Branch: {complaint.branch}</p>
                 </li>

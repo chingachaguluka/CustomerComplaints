@@ -1,4 +1,4 @@
-export function complaints () {
+export default function () {
 
     return [
         { id: '000001', customerName: 'Chinga Chaguluka', phone: '0999989777', email: 'chinga.chaguluka@oibm.mw', branch: 'Lilongwe', logged: '24-Oct-16',
